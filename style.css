@@ -1,0 +1,26 @@
+
+
+/* #productList:nth-child(1),
+#productList:nth-child(2),
+#productList:nth-child(3),
+#productList:nth-child(4),
+#productList:nth-child(5),
+#productList:nth-child(6) {
+    display: block;
+} */
+
+ /* .productList col:nth-child(1) {
+    display: block;
+} */
+
+/* 제품 목록 */
+.album .container .col {
+    display: none;
+}
+.album .container .col:nth-child(1), 
+.album .container .col:nth-child(2),
+.album .container .col:nth-child(3) {
+    display: block;
+}
+
+
