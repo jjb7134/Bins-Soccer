@@ -30,4 +30,8 @@
     }
 
 
-// 자동으로 넘어감
+// 3초 간격으로 자동으로 넘어감
+setInterval(() => {
+    slideIndex++;
+    showSlides(slideIndex);
+}, 3000)
