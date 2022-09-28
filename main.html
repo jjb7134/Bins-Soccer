@@ -16,29 +16,29 @@
 </head>
 
 <body class="bg-secondary bg-opacity-10">
-     <!-- Navbar -->
-     <nav class="navbar navbar-light bg-light p-3 mb-5 bg-body rounded fixed-top">
-      <div class="container-fluid ">
-        <a class="navbar-brand" href="main.html">Bin's Soccer</a>
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="product.html">축구용품</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="news.html">축구소식</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="board.html">소통 광장</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="contact.html">찾아오는 길</a>
-          </li>
-        </ul>
-        <button type="button" class="btn btn-light ">
-          <a class="nav-link text-dark" href="login.html">로그인</a>
-        </button>
-      </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-light bg-light p-3 mb-5 bg-body rounded fixed-top">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="main.html">Bin's Soccer</a>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="product.html">축구용품</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="news.html">축구소식</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="board.html">소통 광장</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="contact.html">찾아오는 길</a>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-light ">
+        <a class="nav-link text-dark" href="login.html">로그인</a>
+      </button>
+    </div>
+  </nav>
 
   <!-- 이미지 섹션 -->
   <section>
@@ -51,30 +51,27 @@
     <h1 class="text-center">둘러보세요 : )</h1>
     <div id="carouselExampleIndicators" class="carousel slide shadow mt-3 mb-5">
       <div class="carousel-indicators">
-        <button  onclick="currentSlide(1)" data-bs-target="#carouselExampleIndicators"  
-        class="point"></button>
-        <button  onclick="currentSlide(2)" data-bs-target="#carouselExampleIndicators"   
-        class="point"></button>
-        <button  onclick="currentSlide(3)" data-bs-target="#carouselExampleIndicators"  
-        class="point"></button>
+        <button onclick="currentSlide(1)" data-bs-target="#carouselExampleIndicators" class="point"></button>
+        <button onclick="currentSlide(2)" data-bs-target="#carouselExampleIndicators" class="point"></button>
+        <button onclick="currentSlide(3)" data-bs-target="#carouselExampleIndicators" class="point"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item">
-          <img src="img/main1.png" class="d-block w-100" >
+          <img src="img/main1.png" class="d-block w-100">
         </div>
-        <div class="carousel-item" >
+        <div class="carousel-item">
           <img src="img/main2.jpg" class="d-block w-100">
         </div>
         <div class="carousel-item">
-          <img src="img/main3.jpg" class="d-block w-100" >
+          <img src="img/main3.jpg" class="d-block w-100">
         </div>
       </div>
-      <button class="carousel-control-prev" onclick="plusSlides(-1)" >
-        <span class="carousel-control-prev-icon" ></span>
+      <button class="carousel-control-prev" onclick="plusSlides(-1)">
+        <span class="carousel-control-prev-icon"></span>
         <!-- <span class="visually-hidden">Previous</span> -->
       </button>
-      <button class="carousel-control-next" onclick="plusSlides(1)" >
-        <span class="carousel-control-next-icon" ></span>
+      <button class="carousel-control-next" onclick="plusSlides(1)">
+        <span class="carousel-control-next-icon"></span>
         <!-- <span class="visually-hidden">Next</span> -->
       </button>
     </div>
@@ -85,7 +82,8 @@
   <section class="section mt-5 mb-5">
     <h1 class="text-center mb-3">축구 소식</h1>
     <!-- 큰사이즈 사진 반 설명 반 -->
-    <div class="card mb-3">
+    <div class="card mb-3" style=" cursor: pointer;"
+      onclick="location.href='https://www.kleague.com/news_view.do?seq=86746&search=%EC%83%81%EB%B2%8C&orderBy=seq&viewOption=list&page=1';">
       <div class="row g-0">
         <div class="col-md-6">
           <img src="https://www.kleague.com/assets/images/no_thumbnail.png" class="img-fluid rounded-start" alt="...">
@@ -93,8 +91,11 @@
         <div class="col-md-6">
           <div class="card-body">
             <h5 class="card-title">NOTICE</h5>
-            <p class="card-text">제14차 상벌 위원회 결과</p>
-            <p class="card-text"><small class="text-muted">제14차 상벌 위원회 결과</small></p>
+            <a href="#" class="card-text text-decoration-none">제14차 상벌 위원회 결과</a>
+            <p class="card-text"><small class="text-muted">한국프로축구연맹(이하 '연맹')은
+                15일 제14차 상벌위원회를 열어 제주유나이티드 진성욱의 경기 중
+                퇴장에 따른 출장정지 등을 감면하기로 했다.
+              </small></p>
           </div>
         </div>
       </div>
@@ -102,19 +103,19 @@
 
     <!-- 작은 사진으로 3개  -->
     <div class="row">
-      <div class="col-md-4">
-        <div class="card text-bg-dark">
+      <div class="col-md-4" style=" cursor: pointer;"
+        onclick="location.href='https://www.kleague.com/news_view.do?seq=86797&orderBy=seq&viewOption=list&page=1';">
+        <div class="card ">
           <img
             src="https://kleague-admin-test.s3.ap-northeast-2.amazonaws.com/v1/news/3.%20%EC%A0%84%EB%82%A8%20%EB%B0%9C%EB%A1%9C%ED%85%94%EB%A6%AC(22-08-28,%2035%EB%9D%BC%EC%9A%B4%EB%93%9C%20vs%20%EC%B6%A9%EB%82%A8%EC%95%84%EC%82%B0)_20220916_122159.jpg"
-            class="card-img" alt="...">
+            class="card-img">
           <div class="card-img-overlay">
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <!-- <p class="card-text">이달의 선수 이승우</p> -->
-            <a href="#" class="card-text text-bg-dark">이달의 선수 이승우</a>
+            <a class="card-text text-bg-dark text-decoration-none">직관 인증하고 선물 받자!</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4" style=" cursor: pointer;"
+        onclick="location.href='https://www.kleague.com/news_view.do?seq=86796&orderBy=seq&viewOption=list&page=1';">
         <div class="card text-bg-dark">
           <img
             src="https://press.kleague.com/new/_upload/attch/9.16.%20%E2%80%98PO%20%EB%AA%BB%20%EB%86%93%EC%B9%9C%EB%8B%A4%E2%80%99%20%EC%B6%A9%EB%82%A8%EC%95%84%EC%82%B0FC,%20%EC%95%88%EC%96%91%20%EC%83%81%EB%8C%80%EB%A1%9C%205%EC%9C%84%20%ED%83%88%ED%99%98%20%EB%82%98%EC%84%A0%EB%8B%A4.jpg"
@@ -123,20 +124,19 @@
             <!-- <h5 class="card-title">Card title</h5> -->
             <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional -->
             <!-- content. This content is a little bit longer.</p> -->
-            <a href="#" class="card-text text-light"><small>k리그 2022 40라운드 프리뷰</small></a>
+            <a class="card-text text-bg-dark text-decoration-none">마사(대전), K리그2 41라운드 MVP</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <!-- 4번째 -->
+      <div class="col-md-4" style=" cursor: pointer;"
+        onclick="location.href='https://www.kleague.com/news_view.do?seq=86790&orderBy=seq&viewOption=list&page=1';">
         <div class="card text-bg-dark">
           <img
             src="https://press.kleague.com/new/_upload/attch/%EB%B6%80%EC%82%B0%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC%20%E2%80%98%EC%8A%9B%ED%8D%BC%EC%9A%B0%EB%A8%BC%E2%80%99,%20K%EB%A6%AC%EA%B7%B8%20K-WIN%20CUP(%ED%80%B8%EC%BB%B5)%20%EC%B6%9C%EC%82%AC%ED%91%9C.JPG"
-            class="card-img" alt="...">
+            class="card-img">
           <div class="card-img-overlay">
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional -->
-            <!-- content. This content is a little bit longer.</p> -->
-            <p class="card-text"><small>k리그 2022 40라운드 프리뷰</small></p>
+            <a class="card-text text-bg-dark text-decoration-none">와디즈 펀딩 진행</a>
           </div>
         </div>
       </div>
@@ -145,85 +145,79 @@
 
   <!-- 영상 -->
   <section class="section mt-5 mb-5">
-    <h1 class="text-center">영상</h1>
+    <h1 class="text-center mb-3">영상</h1>
 
     <!-- 작은 사진으로 6개  -->
     <div class="row">
-      <div class="col-md-4 mb-3">
-        <div class="card text-bg-dark">
+
+      <div class="col-md-4 mb-3" style=" cursor: pointer;"
+        onclick="location.href='https://www.kleague.com/video_view.do?seq=30619496&category=highlight&listType=tile&searchWord=&orderType=&page=1&leagueId=&club=';">
+        <div class="card text-bg-dark ">
           <img
-            src="https://kleague-admin-test.s3.ap-northeast-2.amazonaws.com/v1/news/3.%20%EC%A0%84%EB%82%A8%20%EB%B0%9C%EB%A1%9C%ED%85%94%EB%A6%AC(22-08-28,%2035%EB%9D%BC%EC%9A%B4%EB%93%9C%20vs%20%EC%B6%A9%EB%82%A8%EC%95%84%EC%82%B0)_20220916_122159.jpg"
+            src="https://press.kleague.com/new/_upload/attch/0515_15R_%EC%95%88%EC%82%B0_%ED%95%98%EC%8A%B9%EC%9A%B4%20%EB%93%9D%EC%A0%90%20%EC%84%B8%EB%A6%AC%EB%A8%B8%EB%8B%88%20(5)[1].jpg"
             class="card-img" alt="...">
           <div class="card-img-overlay">
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <!-- <p class="card-text">이달의 선수 이승우</p> -->
-            <p class="card-text"><small>이달의 선수 이승우</small></p>
+            <p class="card-text text-bg-dark text-decoration-none">부천 성골유스 김규민 폭발적 포텐을 보여준 K리그 데뷔전!</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
-        <div class="card text-bg-dark">
+
+      <div class="col-md-4 mb-3" style=" cursor: pointer;"
+        onclick="location.href='https://www.kleague.com/video_view.do?seq=29765491&category=highlight';">
+        <div class="card text-bg-dark text-decoration-none">
           <img
-            src="https://press.kleague.com/new/_upload/attch/9.16.%20%E2%80%98PO%20%EB%AA%BB%20%EB%86%93%EC%B9%9C%EB%8B%A4%E2%80%99%20%EC%B6%A9%EB%82%A8%EC%95%84%EC%82%B0FC,%20%EC%95%88%EC%96%91%20%EC%83%81%EB%8C%80%EB%A1%9C%205%EC%9C%84%20%ED%83%88%ED%99%98%20%EB%82%98%EC%84%A0%EB%8B%A4.jpg"
+            src="https://kleague-admin-test.s3.ap-northeast-2.amazonaws.com/v1/news/%ED%8C%8C%EC%9D%B4%EB%84%90%EB%9D%BC%EC%9A%B4%EB%93%9C%20%ED%8C%A8%EC%8A%A4%20%EC%9D%B4%EB%AF%B8%EC%A7%80(1)_20220928_125842.jpg"
             class="card-img" alt="...">
           <div class="card-img-overlay">
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional -->
-            <!-- content. This content is a little bit longer.</p> -->
-            <a href="#" class="card-text"><small>k리그 2022 40라운드 프리뷰</small></a>
+            <p class="card-text text-bg-dark text-decoration-none">우리의 든든한 미래, '충남아산FC U18 선수단'</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
-        <div class="card text-bg-dark">
+
+      <div class="col-md-4 mb-3" style=" cursor: pointer;"
+        onclick="location.href='https://www.kleague.com/video_view.do?seq=30707321&category=&listType=list&orderType=&page=1&leagueId=&club=';">
+        <div class="card text-bg-dark text-decoration-none">
           <img
-            src="https://press.kleague.com/new/_upload/attch/%EB%B6%80%EC%82%B0%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC%20%E2%80%98%EC%8A%9B%ED%8D%BC%EC%9A%B0%EB%A8%BC%E2%80%99,%20K%EB%A6%AC%EA%B7%B8%20K-WIN%20CUP(%ED%80%B8%EC%BB%B5)%20%EC%B6%9C%EC%82%AC%ED%91%9C.JPG"
+            src="https://kleague-admin-test.s3.ap-northeast-2.amazonaws.com/v1/news/2022.08.11%201%EC%B0%A8%20%EA%B3%B5%EC%B2%AD%ED%9A%8C%20%EC%82%AC%EC%A7%84%20(1)_20220919_084833.jpg"
             class="card-img" alt="...">
           <div class="card-img-overlay">
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional -->
-            <!-- content. This content is a little bit longer.</p> -->
-            <p class="card-text"><small>k리그 2022 40라운드 프리뷰</small></p>
+            <p class="card-text text-bg-dark text-decoration-none">폭풍처럼 몰아처라 대전! [OFF THE PITCH 41R]</p>
           </div>
         </div>
       </div>
     </div>
+
     <div class="row">
-      <div class="col-md-4 mb-3">
-        <div class="card text-bg-dark">
+      <div class="col-md-4 mb-3" style=" cursor: pointer;"
+        onclick="location.href='https://www.kleague.com/video_view.do?seq=30698530&category=club&listType=list&orderType=&page=1&leagueId=&club=';">
+        <div class="card text-bg-dark text-decoration-none">
           <img
-            src="https://kleague-admin-test.s3.ap-northeast-2.amazonaws.com/v1/news/3.%20%EC%A0%84%EB%82%A8%20%EB%B0%9C%EB%A1%9C%ED%85%94%EB%A6%AC(22-08-28,%2035%EB%9D%BC%EC%9A%B4%EB%93%9C%20vs%20%EC%B6%A9%EB%82%A8%EC%95%84%EC%82%B0)_20220916_122159.jpg"
+            src="https://press.kleague.com/new/_upload/attch/%EC%9D%B8%EC%B2%9C%EC%9C%A0%EB%82%98%EC%9D%B4%ED%8B%B0%EB%93%9C,%209%EB%85%84%20%EB%A7%8C%EC%97%90%20%ED%8C%8C%EC%9D%B4%EB%84%90A%20%EB%AC%B4%EB%8C%80%EC%84%9C%20'%EC%84%A0%EB%91%90'%20%EC%9A%B8%EC%82%B0%EA%B3%BC%20%EB%A7%9E%EB%8C%80%EA%B2%B0%20(1).jpg"
             class="card-img" alt="...">
           <div class="card-img-overlay">
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <!-- <p class="card-text">이달의 선수 이승우</p> -->
-            <p class="card-text"><small>이달의 선수 이승우</small></p>
+            <p class="card-text text-bg-dark text-decoration-none">'파이널 라운드의 시작' [34R PROMO]</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
-        <div class="card text-bg-dark">
+      <div class="col-md-4 mb-3" style=" cursor: pointer;"
+        onclick="location.href='https://www.kleague.com/video_view.do?seq=30695815&category=club&listType=list&orderType=&page=1&leagueId=&club=';">
+        <div class="card text-bg-dark text-decoration-none">
           <img
-            src="https://press.kleague.com/new/_upload/attch/9.16.%20%E2%80%98PO%20%EB%AA%BB%20%EB%86%93%EC%B9%9C%EB%8B%A4%E2%80%99%20%EC%B6%A9%EB%82%A8%EC%95%84%EC%82%B0FC,%20%EC%95%88%EC%96%91%20%EC%83%81%EB%8C%80%EB%A1%9C%205%EC%9C%84%20%ED%83%88%ED%99%98%20%EB%82%98%EC%84%A0%EB%8B%A4.jpg"
+            src="https://press.kleague.com/new/_upload/attch/%EC%9D%B8%EC%B2%9C%EC%9C%A0%EB%82%98%EC%9D%B4%ED%8B%B0%EB%93%9C,%20%E3%88%9C%EB%A6%AC%ED%95%84%ED%95%98%EC%9D%B4%EB%93%9C%EB%A0%88%EC%9D%B4%EC%85%98%EA%B3%BC%20%ED%9B%84%EC%9B%90%20%ED%98%91%EC%95%BD%20%EC%B2%B4%EA%B2%B0.jpg"
             class="card-img" alt="...">
           <div class="card-img-overlay">
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional -->
-            <!-- content. This content is a little bit longer.</p> -->
-            <a href="#" class="card-text"><small>k리그 2022 40라운드 프리뷰</small></a>
+            <p class="card-text text-bg-dark text-decoration-none">나상현씨밴드 - 진군가 (FC서울 선수입장곡) | Official MV</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
-        <div class="card text-bg-dark">
+      <div class="col-md-4 mb-3" style=" cursor: pointer;"
+        onclick="location.href='https://www.kleague.com/video_view.do?seq=30711351&category=club&listType=list&orderType=&page=1&leagueId=&club=';">
+        <div class="card text-bg-dark text-decoration-none">
           <img
-            src="https://press.kleague.com/new/_upload/attch/%EB%B6%80%EC%82%B0%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC%20%E2%80%98%EC%8A%9B%ED%8D%BC%EC%9A%B0%EB%A8%BC%E2%80%99,%20K%EB%A6%AC%EA%B7%B8%20K-WIN%20CUP(%ED%80%B8%EC%BB%B5)%20%EC%B6%9C%EC%82%AC%ED%91%9C.JPG"
+            src="https://kleague-admin-test.s3.ap-northeast-2.amazonaws.com/v1/news/K%EB%A6%AC%EA%B7%B8%20%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8%20%EC%96%B4%EC%B9%B4%EC%9A%B4%ED%8C%85%20%EA%B3%BC%EC%A0%952_20220919_115404.jpg"
             class="card-img" alt="...">
           <div class="card-img-overlay">
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional -->
-            <!-- content. This content is a little bit longer.</p> -->
-            <p class="card-text"><small>k리그 2022 40라운드 프리뷰</small></p>
+            <p class="card-text text-bg-dark text-decoration-none">물병 세우기에 진심인 편.mov</p>
           </div>
         </div>
       </div>
